@@ -38,6 +38,8 @@ _Lifehack_: If you want to use a private channel, use one of these solutions:
 
 **6. Play with settings.SENSITIVITY and settings.MIN_CONTOUR to get better results**
 
+**7. Connect a camera to your awesome Raspberry Pi**
+
 ## Run it
 ```
 python start.py
