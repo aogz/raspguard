@@ -21,8 +21,8 @@ pip install -r requirements.txt
 ```
 
 **3. Create bot and channel and make bot admin**
-https://core.telegram.org/bots#3-how-do-i-create-a-bot
-https://telegram.org/faq_channels#q-what-39s-a-channel
+
+[How to create a bot](https://core.telegram.org/bots#3-how-do-i-create-a-bot) and [How to create a channel](https://telegram.org/faq_channels#q-what-39s-a-channel)
 
 **4. Then make your bot channel administrator**
 1. Open Channel info (in app title)
@@ -33,7 +33,8 @@ https://telegram.org/faq_channels#q-what-39s-a-channel
 
 **5. Set bot api key and channel in settings**
 _Lifehack_: If you want to use a private channel, use one of these solutions:
-https://stackoverflow.com/questions/33858927/how-to-obtain-the-chat-id-of-a-private-telegram-channel
+
+[How to obtain the chat id of a private telegram channel](https://stackoverflow.com/questions/33858927/how-to-obtain-the-chat-id-of-a-private-telegram-channel)
 
 **6. Play with settings.SENSITIVITY and settings.MIN_CONTOUR to get better results**
 
