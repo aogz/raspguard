@@ -32,6 +32,7 @@ pip install -r requirements.txt
 5. Clicking on it you make it as administrator.
 
 **5. Set bot api key and channel in settings**
+
 _Lifehack_: If you want to use a private channel, use one of these solutions:
 
 [How to obtain the chat id of a private telegram channel](https://stackoverflow.com/questions/33858927/how-to-obtain-the-chat-id-of-a-private-telegram-channel)
