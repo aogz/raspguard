@@ -16,7 +16,7 @@ git clone git@github.com:aogz/raspguard.git
 **2. Install requirements**
 ```
 cd raspguard
-mkvirtualenv -p python3 raspguard  # Or virtualenv venv && source venv/bin/activate
+mkvirtualenv -p python3 raspguard  # Or virtualenv -p python3 venv && source venv/bin/activate
 pip install -r requirements.txt
 ```
 
