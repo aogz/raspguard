@@ -20,6 +20,8 @@ mkvirtualenv -p python3 raspguard  # Or virtualenv -p python3 venv && source ven
 pip install -r requirements.txt
 ```
 
+[Install OpenCV on Raspberry Pi](https://www.pyimagesearch.com/2018/09/26/install-opencv-4-on-your-raspberry-pi/)
+
 **3. Create bot and channel and make bot admin**
 
 [How to create a bot](https://core.telegram.org/bots#3-how-do-i-create-a-bot) and [How to create a channel](https://telegram.org/faq_channels#q-what-39s-a-channel)
