@@ -60,6 +60,8 @@ class RaspGuard:
                 self.stop_recording()
                 path = self.write_gif()
                 self.send_gif(path)
+            
+            print('is recording')
             time.sleep(1.0 / settings.GIF_FPS)
         else:
             if self.is_recording:
