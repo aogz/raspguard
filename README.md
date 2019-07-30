@@ -16,9 +16,11 @@ git clone git@github.com:aogz/raspguard.git
 **2. Install requirements**
 ```
 cd raspguard
-mkvirtualenv -p python3 raspguard  # Or virtualenv venv && source venv/bin/activate
+mkvirtualenv -p python3 raspguard  # Or virtualenv -p python3 venv && source venv/bin/activate
 pip install -r requirements.txt
 ```
+
+[Install OpenCV on Raspberry Pi](https://www.pyimagesearch.com/2018/09/26/install-opencv-4-on-your-raspberry-pi/)
 
 **3. Create bot and channel and make bot admin**
 
@@ -32,11 +34,14 @@ pip install -r requirements.txt
 5. Clicking on it you make it as administrator.
 
 **5. Set bot api key and channel in settings**
+
 _Lifehack_: If you want to use a private channel, use one of these solutions:
 
 [How to obtain the chat id of a private telegram channel](https://stackoverflow.com/questions/33858927/how-to-obtain-the-chat-id-of-a-private-telegram-channel)
 
 **6. Play with settings.SENSITIVITY and settings.MIN_CONTOUR to get better results**
+
+**7. Connect a camera to your awesome Raspberry Pi**
 
 ## Run it
 ```
