@@ -34,7 +34,6 @@ class RaspGuard:
             
             # threshold it
             thresh_ = 255.0 / 100 * (100 - settings.SENSITIVITY)
-            print(thresh_)
             _, thresh = cv2.threshold(gray, thresh_, 255, cv2.THRESH_BINARY)
 
             # erode + dilate to make contours better
@@ -56,11 +55,12 @@ class RaspGuard:
         if any([cv2.contourArea(c) > settings.MIN_CONTOUR for c in contours]):
             self.is_recording = True
             self.frames_to_save.append(frame)
-            if len(self.frames_to_save) >= 100:
+
+            if len(self.frames_to_save) >= settings.MAX_FRAMES:
                 self.stop_recording()
                 path = self.write_gif()
                 self.send_gif(path)
-            time.sleep(1)
+            time.sleep(1.0 / settings.GIF_FPS)
         else:
             if self.is_recording:
                 path = self.write_gif()
@@ -81,8 +81,8 @@ class RaspGuard:
             
     def write_gif(self):
         filename = self.gif_path()
-        clip = ImageSequenceClip(self.frames_to_save, fps=1)
-        clip.write_gif(filename, fps=1)
+        clip = ImageSequenceClip(self.frames_to_save, fps=2)
+        clip.write_gif(filename, fps=2)
         return filename
 
     def send_gif(self, path, caption=None):
