@@ -47,3 +47,14 @@ _Lifehack_: If you want to use a private channel, use one of these solutions:
 ```
 python start.py
 ```
+
+## Run it in background on reboot
+```
+crontab -e 
+```
+
+Add this at the end of the file:
+```
+@reboot python3 /home/pi/raspguard/start.py  # replace with your own path
+```
+
