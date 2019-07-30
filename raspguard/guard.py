@@ -57,11 +57,10 @@ class RaspGuard:
             self.frames_to_save.append(frame)
 
             if len(self.frames_to_save) >= settings.MAX_FRAMES:
-                self.stop_recording()
                 path = self.write_gif()
                 self.send_gif(path)
+                self.stop_recording()
             
-            print('is recording')
             time.sleep(1.0 / settings.GIF_FPS)
         else:
             if self.is_recording:
