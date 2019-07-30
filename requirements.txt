@@ -2,13 +2,18 @@ asn1crypto==0.24.0
 certifi==2019.6.16
 cffi==1.12.3
 chardet==3.0.4
+Click==7.0
 cryptography==2.7
 decorator==4.4.0
+Flask==1.1.1
 future==0.17.1
 idna==2.8
 imageio==2.5.0
 imageio-ffmpeg==0.3.0
 imutils==0.5.2
+itsdangerous==1.1.0
+Jinja2==2.10.1
+MarkupSafe==1.1.1
 moviepy==1.0.0
 numpy==1.16.4
 opencv-python==4.1.0.25
@@ -20,3 +25,4 @@ requests==2.22.0
 six==1.12.0
 tqdm==4.32.2
 urllib3==1.25.3
+Werkzeug==0.15.5
